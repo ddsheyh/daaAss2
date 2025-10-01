@@ -49,9 +49,9 @@ mvn package
 ```
 **Run Benchmarks:**
 ```bash
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner benchmark 1000 random
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner test
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner compare 5000
+java -cp target/classes cli.BenchmarkRunner benchmark 1000 random
+java -cp target/classes cli.BenchmarkRunner test
+java -cp target/classes cli.BenchmarkRunner compare 5000
 ```
 
 ## Performance Metrics
