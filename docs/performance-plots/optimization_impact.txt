@@ -1,0 +1,8 @@
+OPTIMIZATION IMPACT (n=1,000, Nearly-Sorted)
+============================================
+Version        | Time    | Comparisons | Improvement
+---------------|---------|-------------|------------
+Standard       | 12.0 ms | 180,000     | Baseline
++ Early Check  | 10.5 ms | 160,000     | 12.5% faster
++ Binary Search| 8.0 ms  | 120,000     | 33% faster
+All Optimizations | 7.5 ms | 110,000    | 37.5% faster

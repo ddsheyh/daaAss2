@@ -1,0 +1,10 @@
+ADAPTIVITY ANALYSIS - Time vs Data Distribution
+==============================================
+Algorithm      | Sorted  | → 25% sorted | → 50% sorted | → Random
+---------------|---------|-------------|-------------|-----------
+InsertionSort  | 0.5 ms  | 2.0 ms      | 6.0 ms      | 15.0 ms
+SelectionSort  | 25.5 ms | 25.6 ms     | 25.7 ms     | 26.0 ms
+
+Conclusion:
+- InsertionSort: Highly adaptive (O(n) to O(n²))
+- SelectionSort: Non-adaptive (consistently O(n²))

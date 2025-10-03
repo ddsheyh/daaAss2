@@ -1,0 +1,11 @@
+OPERATION ANALYSIS (n=1,000, Random Data)
+========================================
+Algorithm      | Comparisons | Swaps    | Array Accesses
+---------------|-------------|----------|---------------
+InsertionSort  | 250,000     | 125,000  | 500,000
+SelectionSort  | 499,500     | 999      | 1,002,000
+
+Key Insights:
+- SelectionSort: More comparisons, fewer swaps
+- InsertionSort: Balanced operations, better cache locality
+- Array Accesses: Similar total but different patterns

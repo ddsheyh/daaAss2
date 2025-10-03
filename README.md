@@ -49,9 +49,9 @@ mvn package
 ```
 **Run Benchmarks:**
 ```bash
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner benchmark 1000 random
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner test
-java -cp target/classes com.dcalgorithms.cli.BenchmarkRunner compare 5000
+java -cp target/classes cli.BenchmarkRunner benchmark 1000 random
+java -cp target/classes cli.BenchmarkRunner test
+java -cp target/classes cli.BenchmarkRunner compare 5000
 ```
 
 ## Performance Metrics
@@ -112,3 +112,21 @@ Insertion Sort works by iterating through the array and inserting each element i
 - Early termination when array is already sorted
 - Binary search for faster insertion in nearly-sorted data
 - Minimal memory usage with O(1) auxiliary space
+
+## Peer Analysis Report
+
+See [docs/analysis-report.pdf](docs/analysis-report.pdf) for detailed analysis of partner's Selection Sort implementation, including complexity analysis, code review, and optimization suggestions.
+
+### Key Findings:
+- Algorithm correctly implements Selection Sort with O(n²) time complexity
+- Space efficiency optimal at O(1) auxiliary space
+- Early termination optimization attempted but inefficient
+- Performance tracking has measurement overhead
+
+## Performance Analysis
+
+See detailed performance analysis in `docs/performance-plots/`:
+- Time complexity comparison
+- Operation count analysis
+- Adaptivity evaluation
+- Optimization impact assessment

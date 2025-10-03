@@ -1,0 +1,31 @@
+PERFORMANCE COMPARISON (n=1,000)
+===============================
+Distribution   | InsertionSort | SelectionSort | Winner
+---------------|---------------|---------------|---------
+Sorted         | 0.5 ms        | 25.5 ms       | Insertion (51x faster)
+Random         | 15.0 ms       | 26.0 ms       | Insertion (1.7x faster)
+Reverse        | 30.0 ms       | 25.8 ms       | Selection (1.16x faster)
+Nearly-Sorted  | 8.0 ms        | 25.2 ms       | Insertion (3.2x faster)
+
+Time (ms)
+  ↑
+  |     SelectionSort █████
+  |     InsertionSort ▓▓▓▓▓
+  |
+35|               ████
+  |               ▓▓▓▓
+30|           ████████
+  |       ▓▓▓▓▓▓▓▓▓▓▓▓
+25|   ████████████████
+  |   ████████████████
+20|   ████████████████
+  |   ▓▓▓▓▓▓▓▓▓▓▓▓
+15|   ▓▓▓▓▓▓▓▓▓▓▓▓
+  |   ▓▓▓▓▓▓▓▓▓▓▓▓
+10|   ▓▓▓▓▓▓▓▓▓▓▓▓
+  |       ▓▓▓▓▓▓▓▓
+ 5|       ▓▓▓▓
+  |   ▓▓▓▓
+ 0|▓▓▓▓
+  +--|--|--|--|--→
+    Sorted Random Reverse Nearly

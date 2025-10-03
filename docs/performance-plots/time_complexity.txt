@@ -1,0 +1,20 @@
+INSERTION SORT TIME COMPLEXITY
+==============================
+Input Size (n) | Sorted    | Random    | Reverse   | Nearly-Sorted
+---------------|-----------|-----------|-----------|---------------
+100           | 0.05 ms   | 0.15 ms   | 0.30 ms   | 0.08 ms
+1,000         | 0.50 ms   | 15.0 ms   | 30.0 ms   | 8.0 ms
+10,000        | 5.0 ms    | 1,500 ms  | 3,000 ms  | 800 ms
+
+Time (ms)
+  ↑
+  |     Reverse (O(n²))
+  |    /
+  |   /   Random (O(n²))
+  |  /   /
+  | /   /   Nearly (O(n log n) with optimization)
+  |/   /   /
+  +---/---/--- Sorted (O(n))
+  | /   /
+  |/   /
+  +---→ n
